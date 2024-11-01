@@ -52,6 +52,45 @@
             </li>
           </ul>
         </address>
+
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close"></button>
+          <nav>
+            <ul class="mob-nav-list">
+              <li class="mob-nav-item">
+                <a class="mob-nav-link current" href="./index.html">Studio</a>
+              </li>
+              <li class="mob-nav-item">
+                <a class="mob-nav-link" href="">Portfolio</a>
+              </li>
+              <li class="mob-nav-item">
+                <a class="mob-nav-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mob-contacts">
+            <ul class="contacts-list">
+              <li class="contacts-item">
+                <a class="contacts-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="contacts-item">
+                <a class="contacts-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
 
@@ -128,6 +167,7 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="./images/img-1.jpg 1x, ./images/img-1-2x.jpg 2x"
                 src="./images/img-1.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -171,6 +211,7 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="./images/img-2.jpg 1x, ./images/img-2-2x.jpg 2x"
                 src="./images/img-2.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -214,6 +255,7 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="./images/img-3.jpg 1x, ./images/img-3-2x.jpg 2x"
                 src="./images/img-3.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -257,6 +299,7 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="./images/img-4.jpg 1x, ./images/img-4-2x.jpg 2x"
                 src="./images/img-4.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -309,7 +352,11 @@
               <div class="portf-item-wrapper">
                 <img
                   class="portf-img"
-                  src="./images/img-5.jpg"
+                  srcset="
+                    ./images/img-5-mob.jpg    1x,
+                    ./images/img-5-mob-2x.jpg 2x
+                  "
+                  src="./images/img-5-mob.jpg"
                   alt="BankApp"
                   width="360"
                 />
@@ -328,7 +375,11 @@
               <div class="portf-item-wrapper">
                 <img
                   class="portf-img"
-                  src="./images/img-6.jpg"
+                  srcset="
+                    ./images/img-6-mob.jpg    1x,
+                    ./images/img-6-mob-2x.jpg 2x
+                  "
+                  src="./images/img-6-mob.jpg"
                   alt="Payment"
                   width="360"
                 />
@@ -347,7 +398,11 @@
               <div class="portf-item-wrapper">
                 <img
                   class="portf-img"
-                  src="./images/img-7.jpg"
+                  srcset="
+                    ./images/img-7-mob.jpg    1x,
+                    ./images/img-7-mob-2x.jpg 2x
+                  "
+                  src="./images/img-7-mob.jpg"
                   alt="MedApp"
                   width="360"
                 />
@@ -366,7 +421,8 @@
               <div class="portf-item-wrapper">
                 <img
                   class="portf-img"
-                  src="./images/img-8.jpg"
+                  srcset="./images/img-8-mob.jpg, ./images/img-8-mob-2x.jpg 2x"
+                  src="./images/img-8-mob.jpg"
                   alt="Taxi"
                   width="360"
                 />
@@ -385,7 +441,8 @@
               <div class="portf-item-wrapper">
                 <img
                   class="portf-img"
-                  src="./images/img-9.jpg"
+                  srcset="./images/img-9-mob.jpg, ./images/img-9-mob-2x.jpg 2x"
+                  src="./images/img-9-mob.jpg"
                   alt="Screen"
                   width="360"
                 />
@@ -404,7 +461,11 @@
               <div class="portf-item-wrapper">
                 <img
                   class="portf-img"
-                  src="./images/img-10.jpg"
+                  srcset="
+                    ./images/img-10-mob.jpg,
+                    ./images/img-10-mob-2x.jpg 2x
+                  "
+                  src="./images/img-10-mob.jpg"
                   alt="Courses"
                   width="360"
                 />
@@ -490,7 +551,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <!-- <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="modal-open" data-modal-close>
           <svg class="modal-open-button" width="8" height="8">
@@ -575,6 +636,6 @@
       </div>
     </div>
 
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script>   -->
   </body>
 </html>

@@ -51,15 +51,9 @@ input {
     align-items: center;
 }
 
-.nav-list, .contacts {
+.nav-list, .contacts, .contacts-list {
     display: none;
-}
-
-.contacts-list {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
+}   
 
 .logo-header {
     font-family: 'Raleway', sans-serif;
@@ -102,6 +96,7 @@ button {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    z-index: 1000;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -273,7 +268,6 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    max-width: 320px;
     padding: 72px 52px;
     margin: 0 auto;
 }
@@ -320,7 +314,6 @@ button {
 }
 
 .about {
-    max-width: 320px;
     padding: 96px 16px;
     margin-left: auto;
     margin-right: auto;
@@ -368,7 +361,7 @@ button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.02em;/
 }
 
 .team {
@@ -376,7 +369,6 @@ button {
     padding-left: 28px;
     padding-right: 28px;
     margin: 96px auto;
-    max-width: 320px;
 }
 
 .team-header {
@@ -494,7 +486,6 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding-right: 16px;
     padding-left: 16px;
     margin: 96px auto;
-    max-width: 320px;
 }
 
 .portf-header {
@@ -589,7 +580,6 @@ overflow: hidden;
 .footer-container {
     display: flex;
     flex-direction: column;
-    max-width: 320px;
     padding-left: 16px;
     padding-right: 16px;
     margin-left: auto;
@@ -782,6 +772,7 @@ input::placeholder {
     transform: translate(-50%, -50%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-open {
     cursor: pointer;
     position: absolute;
@@ -1029,17 +1020,49 @@ outline: none;
         max-width: 1158px;
         padding: 0 15px;
     }
-    
-    .nav-list,
-        .contacts {
+
+    .nav-list {
         display: flex;
         align-items: center;
-        gap: 40px; 
-        }
+        gap: 40px;
+    }
+    
+    .contacts-list {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
 
     .logo-header {
         padding: 24px 0;
         margin-right: 76px;
+    }
+
+
+    .burger-btn {
+        display: none;
+    }
+
+    .burger-icon {
+        display: none;
+    }
+
+    .main-page {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+        max-width: 1440px;
+        padding: 188px 0;
+    }
+
+    @media screen and (min-resolution: 2dppx) {
+        .main-page {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/people-office-2x.jpg);
+        }
+    }
+
+    .main-header {
+        font-size: 56px;
+        line-height: 107%;
     }
 
     .about {
@@ -1055,7 +1078,7 @@ outline: none;
     }
 
     .about-list {
-        display: flex;
+        flex-direction: row;
         align-items: center;
         gap: 24px;
         max-width: 1128px;
@@ -1077,6 +1100,7 @@ outline: none;
     .about-header {
         font-weight: 500;
         font-size: 20px;
+        text-align: left;
     }
 
     .about-info {
@@ -1085,20 +1109,39 @@ outline: none;
 
     .team {
         padding: 120px 0;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
+    }
+
+    .team-header {
+        padding-top: 0;
+    }
+
+    .team-list {
+        flex-direction: row;
+        gap: 24px;
+        padding-bottom: 0;
+    }
+
+    .social-list {
+        padding: 0;
     }
 
     .portfolio {
         padding-top: 120px;
         padding-bottom: 120px;
-        margin-left: auto;
-        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0 auto;
     }
 
     .portf-list {
+        flex-direction: row;
         column-gap: 24px;
         row-gap: 48px;
+    }
+
+    .portf-item {
+        width: calc((100% - 48px) / 3); 
     }
 
     .footer-container {
@@ -1117,8 +1160,17 @@ outline: none;
         margin-left: auto;
     }
 
-    .modal {
-        width: 408px;
+    .subscribe-form {
+        flex-direction: row;
+        gap: 24px;
     }
 
+
+    .subscribe-text {
+        margin-top: 0;
+    }
+
+    .modal {
+        width: 408;
+    }
 }

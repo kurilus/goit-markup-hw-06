@@ -1013,7 +1013,7 @@ outline: none;
 
 @media screen and (min-width: 768px) {
     .container {
-        min-width: 768px;
+        max-width: 768px;
     }
 
         .header-container {
@@ -1024,33 +1024,35 @@ outline: none;
         .contacts,
         .contacts-list {
             display: flex;
-            margin: 72px auto;
+            margin: 0 auto;
         }
     
         .nav-list {
             display: flex;
             align-items: center;
             gap: 40px;
-            
         }
     
         .contacts {
             align-items: center;
-            flex-direction: row;
-            gap: 40px;
-            margin-top: 24px;
-            margin-bottom: 24px;
-        }
-    
-        .contacts-link {
-            font-weight: 400;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 16px;
+            margin-bottom: 16px;
         }
     
         .contacts-list {
             align-items: center;
-            flex-direction: row;
-            gap: 40px;
-            margin-left: 332px;
+            flex-direction: column;
+            gap: 12px;
+            margin-left: 120px;
+        }
+
+        .contacts-item {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.17;
+            letter-spacing: 0.04em;
         }
     
         .logo-header {
@@ -1065,6 +1067,45 @@ outline: none;
     
         .burger-icon {
             display: none;
+        }
+
+        .main-page {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tab.jpg);
+            max-width: 768px;
+            padding: 112px 0;
+        }
+        
+        @media screen and (min-resolution: 2dppx) {
+            .main-page {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                    url(../images/people-office-tab-2x.jpg);
+            }
+        }
+
+        .main-header {
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 1.07;
+        }
+
+        .about {
+            padding-top: 96px;
+            padding-bottom: 0;
+        }
+
+        .about-list {
+            flex-direction: row;
+            row-gap: 72px;
+            column-gap: 24px;
+            min-width: 736px;
+        }
+
+        .about-item {
+            max-width: 356px;
+        }
+
+        .about-header {
+            text-align: left;
         }
 }
 

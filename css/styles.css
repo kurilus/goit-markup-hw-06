@@ -1113,6 +1113,41 @@ outline: none;
             max-width: calc((100% - 24px) / 2);
         }
 
+        .team-list {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+
+        .portf-list {
+            flex-direction: row;
+            gap: 24px;
+        }
+
+        .portf-item {
+            width: calc((100% - 24px) / 2);
+        }
+
+        .footer-container {
+            margin-left: 108px;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .footer-info-container {
+            align-items: flex-start;
+            width: 264px;
+        }
+
+        .social-text {
+            text-align: left;
+            margin-left: 24px;
+        }
+
+        .footer-social-list {
+            justify-content: left;
+            margin-left: 0px;
+        }
 }
 
 @media screen and (min-width: 1158px) {

@@ -1088,25 +1088,31 @@ outline: none;
             line-height: 1.07;
         }
 
+        .service-btn {
+            margin: 36px auto;
+        }
+
         .about {
-            padding-top: 96px;
             padding-bottom: 0;
         }
 
         .about-list {
+            margin: 0 auto;
             flex-direction: row;
+            justify-content: start;
             row-gap: 72px;
             column-gap: 24px;
-            min-width: 736px;
         }
 
         .about-item {
-            max-width: 356px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            gap: 8px;
+            max-width: calc((100% - 24px) / 2);
         }
 
-        .about-header {
-            text-align: left;
-        }
 }
 
 @media screen and (min-width: 1158px) {
@@ -1198,6 +1204,7 @@ outline: none;
     .about-list {
         flex-direction: row;
         align-items: center;
+        flex-wrap: nowrap;
         gap: 24px;
         max-width: 1128px;
         margin: 0 auto;

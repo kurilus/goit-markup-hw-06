@@ -1160,6 +1160,10 @@ outline: none;
             text-align: left;
             margin-top: 0;
         }
+
+        .modal {
+            width: 408px;
+        }
 }
 
 @media screen and (min-width: 1158px) {

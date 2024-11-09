@@ -303,7 +303,9 @@ button {
     height: 56px;
     border-radius: 4px;
     border: none;
-    margin: 48px auto;
+    margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -314,7 +316,7 @@ button {
 }
 
 .about {
-    padding: 96px 16px;
+    padding: 96px 0px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -337,10 +339,6 @@ button {
     flex-direction: column;
     flex-wrap: wrap;
     gap: 72px;
-}
-
-.about-item {
-    max-width: 264px;
 }
 
 .about-icon-container {
@@ -366,9 +364,7 @@ button {
 
 .team {
     background-color: #f4f4fd;
-    padding-left: 28px;
-    padding-right: 28px;
-    margin: 96px auto;
+    padding: 96px 28px;
 }
 
 .team-header {
@@ -381,7 +377,6 @@ button {
     text-transform: capitalize;
     margin: 0 auto;
     margin-bottom: 72px;
-    padding-top: 96px;
 }
 
 .team-list {
@@ -483,9 +478,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio {
-    padding-right: 16px;
-    padding-left: 16px;
-    margin: 96px auto;
+    padding: 96px 0;
 }
 
 .portf-header {
@@ -600,7 +593,6 @@ overflow: hidden;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    padding-top: 16px;
     min-width: 288px;
 }
 
@@ -656,6 +648,10 @@ overflow: hidden;
     background-color: #31d0aa;
 }
 
+.subscribe {
+    margin-top: 72px;
+}
+
 .subsсribe-form {
     display: flex;
     align-items: center;
@@ -670,7 +666,6 @@ overflow: hidden;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
-    margin-top: 72px;
     margin-bottom: 16px;
     text-align: center;
 }
@@ -1072,7 +1067,8 @@ outline: none;
         .main-page {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tab.jpg);
             max-width: 768px;
-            padding: 112px 0;
+            padding-top: 96px;
+            padding-bottom: 96px;
         }
         
         @media screen and (min-resolution: 2dppx) {
@@ -1093,7 +1089,8 @@ outline: none;
         }
 
         .about {
-            padding-bottom: 0;
+            padding-top: 96px;
+            padding-bottom: 96px;
         }
 
         .about-list {
@@ -1113,10 +1110,20 @@ outline: none;
             max-width: calc((100% - 24px) / 2);
         }
 
+        .team {
+            padding-top: 96px;
+            padding-bottom: 96px;
+        }
+
         .team-list {
             flex-direction: row;
             flex-wrap: wrap;
             gap: 24px;
+        }
+
+        .portfolio {
+            padding-top: 96px;
+            padding-bottom: 96px;
         }
 
         .portf-list {
@@ -1137,7 +1144,6 @@ outline: none;
         .footer-info-container {
             align-items: flex-start;
             width: 264px;
-
         }
 
         .social-text {
@@ -1242,14 +1248,14 @@ outline: none;
 
     .about {
         max-width: 100%;
-        padding: 120px 0;
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
 
     .about-container {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 112px;
     }
 
     .about-list {
@@ -1284,8 +1290,8 @@ outline: none;
     }
 
     .team {
-        padding: 120px 0;
-        margin: 0 auto;
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
 
     .team-header {
@@ -1307,7 +1313,6 @@ outline: none;
         padding-bottom: 120px;
         padding-left: 0;
         padding-right: 0;
-        margin: 0 auto;
     }
 
     .portf-list {
